@@ -1,0 +1,25 @@
+{
+  "name": "express-toy-project",
+  "version": "1.0.0",
+  "description": "CRUD application with Express framework and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyunseo0311/express-toy-project.git"
+  },
+  "keywords": [
+    "CRUD",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Gyunseo Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gyunseo0311/express-toy-project/issues"
+  },
+  "homepage": "https://github.com/gyunseo0311/express-toy-project#readme"
+}
