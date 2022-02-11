@@ -25,9 +25,9 @@ app.use('/img', express.static(path.resolve(__dirname, 'assets/img')));
 app.use('/js', express.static(path.resolve(__dirname, 'assets/js')));
 //css/style.css
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}\n`);
+  console.log(`Server is running on http://localhost:${PORT}\n`);
 });
 
 app.get('/', (req, res) => {
-    res.send('CRUD Application\n');
+  res.send('CRUD Application\n');
 });
