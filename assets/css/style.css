@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap');
 
 :root {
   --dark: #2b2d42;
@@ -15,7 +15,7 @@
 
 a {
   text-decoration: none;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container {
@@ -73,7 +73,7 @@ a {
 
 #site-main {
   margin-top: 6em;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 #site-main .container .box-nav > a {
@@ -163,13 +163,13 @@ table {
   margin: 0.4em 0;
 }
 
-#update_user .form-group input[type="text"],
-#add_user .form-group input[type="text"] {
+#update_user .form-group input[type='text'],
+#add_user .form-group input[type='text'] {
   width: 100%;
   padding: 0.6em 1em;
   margin: 0.5em 0;
   border: 1px solid var(--border);
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1em;
   border-radius: 0.2em;
 }
@@ -180,13 +180,13 @@ table {
 }
 
 /* adding style to radio buttons */
-.radio input[type="radio"] {
+.radio input[type='radio'] {
   position: absolute;
   opacity: 0;
 }
 
-.radio input[type="radio"] + .radio-label:before {
-  content: "";
+.radio input[type='radio'] + .radio-label:before {
+  content: '';
   background: var(--border-btn);
   border-radius: 100%;
   border: 1px solid var(--border);
@@ -203,17 +203,17 @@ table {
   transition: all 250 ease;
 }
 
-.radio input[type="radio"]:checked + .radio-label:before {
+.radio input[type='radio']:checked + .radio-label:before {
   background-color: greenyellow;
   box-shadow: inset 0 0 4px gray;
 }
 
-.radio input[type="radio"]:focus + .radio-label:before {
+.radio input[type='radio']:focus + .radio-label:before {
   outline: none;
   border-color: green;
 }
 
-.radio input[type="radio"]:disabled + .radio-label:before {
+.radio input[type='radio']:disabled + .radio-label:before {
   box-shadow: inset 0 0 4px white;
   border-color: gray;
   background: gray;
@@ -225,7 +225,7 @@ table {
   padding: 0.9em 1em;
   background-color: greenyellow;
   border: none;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1em;
   cursor: pointer;
   border-radius: 0.2em;
