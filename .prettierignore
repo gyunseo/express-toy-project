@@ -1,0 +1,4 @@
+# Ignore all ejs files
+*.ejs
+# Ignore all html files
+*.html
