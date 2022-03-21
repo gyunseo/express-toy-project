@@ -31,10 +31,42 @@ exports.create = (req, res) => {
 };
 
 // retrieve and return all users/ retrieve and return a single user
-exports.find = (req, res) => {};
+exports.find = (req, res) => {
+  Userdb.find()
+    .then((user) => {
+      res.send(user);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || 'Error occured while retrieving user information',
+      });
+    });
+};
 
 // update a new identified user by user id
-exports.update = (req, res) => {};
+exports.update = (req, res) => {
+  if (!req.body) {
+    return res.status(400).send({
+      message: 'Data to update cannot be empty',
+    });
+  }
+
+  const id = req.params.id;
+  Userdb.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+    .then((data) => {
+      if (!data) {
+        res.status(404).send({
+          message: `Cannot update user id ${id}. Maybe user not found!`,
+        });
+      } else {
+        res.send(data);
+      }
+    })
+    .catch((err) => {
+      res.status(500).send({ message: 'Error Update user information' });
+    });
+};
 
 // delete a user with specified user id in the request
 exports.delete = (req, res) => {};
